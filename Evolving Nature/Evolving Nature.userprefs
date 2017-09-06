@@ -1,13 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Map\MapGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Map\MeshGenerator.cs">
     <Files>
-      <File FileName="Assets\Scripts\Map\MapDisplay.cs" Line="19" Column="53" />
-      <File FileName="Assets\Scripts\Map\MapGenerator.cs" Line="12" Column="26" />
-      <File FileName="Assets\Editor\MapGeneratorEditor.cs" Line="15" Column="27" />
-      <File FileName="Assets\Scripts\Map\Noise.cs" Line="38" Column="38" />
-      <File FileName="Assets\Scripts\Map\TextureGenerator.cs" Line="11" Column="44" />
-      <File FileName="Assets\Scripts\Map\MeshGenerator.cs" Line="28" Column="57" />
+      <File FileName="Assets\Scripts\Map\MapDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Map\MapGenerator.cs" Line="66" Column="5" />
+      <File FileName="Assets\Scripts\Map\EndlessTerrain.cs" Line="50" Column="121" />
+      <File FileName="Assets\Editor\MapGeneratorEditor.cs" Line="20" Column="26" />
+      <File FileName="Assets\Scripts\Map\MeshGenerator.cs" Line="16" Column="71" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
