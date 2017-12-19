@@ -1,30 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public static class TextureGenerator {
 
-	public static Texture2D TextureFromColorMap(Color[] colormap, int width, int heigth){
-		Texture2D texture = new Texture2D (width, heigth);
-
+	public static Texture2D TextureFromColourMap(Color[] colourMap, int width, int height) {
+		Texture2D texture = new Texture2D (width, height);
 		texture.filterMode = FilterMode.Point;
 		texture.wrapMode = TextureWrapMode.Clamp;
-		texture.SetPixels (colormap);
+		texture.SetPixels (colourMap);
 		texture.Apply ();
 		return texture;
 	}
 
-	public static Texture2D TextureFromHeigthMap(float[,] heigthmap){
-		int width = heigthmap.GetLength (0);
-		int heigth = heigthmap.GetLength (1);
 
-		Color[] colorMap = new Color[width * heigth];
-		for (int i = 0; i < heigth; i++) {
-			for (int j = 0; j < width; j++) {
-				colorMap [i * width + j] = Color.Lerp (Color.black, Color.white, heigthmap [j, i]);
+	public static Texture2D TextureFromHeightMap(float[,] heightMap) {
+		int width = heightMap.GetLength (0);
+		int height = heightMap.GetLength (1);
+
+		Color[] colourMap = new Color[width * height];
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
+				colourMap [y * width + x] = Color.Lerp (Color.black, Color.white, heightMap [x, y]);
 			}
 		}
 
-		return TextureFromColorMap (colorMap, width, heigth);
+		return TextureFromColourMap (colourMap, width, height);
 	}
+
 }
